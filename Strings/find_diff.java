@@ -57,8 +57,30 @@ class find_diff {
     
 
     // First str1 in str2
-    public int strStr(String haystack, String needle) {
-        int res = 1;
+    public static int strStr(String haystack, String needle) {
+        int res = -1;
+        if(haystack.length() >= needle.length()){
+            for(int i = 0; i < haystack.length(); i ++){
+                if(haystack.charAt(i) == needle.charAt(0)){
+                    for(int j = 1; j < needle.length(); j++){
+                        if(haystack.charAt(i + j) != needle.charAt(j)){
+                            break;
+                        }else if(j + 1 == needle.length()){
+                            // checkd first char in str
+                            res = i;
+                        }
+                    }
+
+                    if(res != -1)break;
+                    if(needle.length() == 1){
+                        res = i;
+                        break;
+                    }
+                }else{
+                    if(i + needle.length() >= haystack.length()) break;
+                }
+            }
+        }
 
         return res;
     }
