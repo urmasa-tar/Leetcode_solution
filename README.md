@@ -8,7 +8,6 @@
     <li><code>java --help</code></li>
     <li><code>java --version</code></li>
     <li><code>touch name.java</code></li>
-    <li><code></code></li>
     <li><code>javac name.java </code></li>
     <li><code>java name.class</code></li>
 </ul>
