@@ -6,7 +6,7 @@ public class anogramm {
 
         Scanner in = new Scanner(System.in);
 
-        isAnagram("abc", "cba");
+        System.out.println(isAnagram("abc", "cbe"));
 
         in.close();
 
@@ -22,7 +22,22 @@ public class anogramm {
             anog[i] = 0;
         }
         // for unicode a(int code) = 97(?)
+        if(s.length() != t.length()){
+            status = false;
+        }else{
 
+            for(int i = 0; i < s.length(); i++){
+                arr[Character.getNumericValue(s.charAt(i)) - 10] += 1;
+                anog[Character.getNumericValue(t.charAt(i)) - 10]+= 1;
+            }
+
+            for(int i = 0; i < 26; i++){
+                if(arr[i] != anog[i]){
+                    status = false;
+                    break;
+                }
+            }
+        }
         return status;
     }
 
