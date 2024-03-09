@@ -5,4 +5,7 @@ auto_save:
 
 clean:
 	rm ./Strings/*.class
+	rm ./Process_simulation/*.class
+
+
 
