@@ -6,6 +6,8 @@ public class anogramm {
 
         Scanner in = new Scanner(System.in);
 
+        isAnagram("abc", "cba");
+
         in.close();
 
     }
