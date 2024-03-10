@@ -1,4 +1,4 @@
-package Process_simulation;
+import java.util.Arrays;
 
 public class product {
     
@@ -31,6 +31,38 @@ public class product {
         }
 
         return res;
+    }
+
+    public boolean canMakeArithmeticProgression(int[] arr) {
+        Arrays.sort(arr);
+        arr[0] = arr[1] - arr[0];
+        if(arr.length > 2){
+            for(int i = 2; i < arr.length; i++){
+                if((arr[0]) !=  (arr[i] - arr[i-1])){
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    public boolean isMonotonic(int[] nums) {
+        boolean status = true;
+        
+        // Module in java
+            for(int i = 2; i < nums.length; i++){
+                try{
+                    if((nums[i - 1] - nums[i - 2]) / Math.abs((nums[i - 1] - nums[i - 2])) != nums[i] - nums[i - 1] / Math.abs((nums[i] - nums[i - 1]))){
+                        status = false;
+                        break;
+                    }
+                } catch (ArithmeticException e){
+                    continue;
+                }
+            }   
+        
+        return status;
     }
 
 }
