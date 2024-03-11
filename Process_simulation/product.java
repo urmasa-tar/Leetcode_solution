@@ -1,9 +1,17 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class product {
     
     public static void main(String[] args){
 
+        Scanner in  = new Scanner(System.in);
+
+
+
+        System.out.println( isMonotonic());
+
+        in.close();
     }
 
     public static int arraySign(int[] nums) {
@@ -47,7 +55,7 @@ public class product {
         return true;
     }
 
-    public boolean isMonotonic(int[] nums) {
+    public static  boolean isMonotonic(int[] nums) {
         boolean status = true;
         
         // Module in java
@@ -60,7 +68,7 @@ public class product {
                 } catch (ArithmeticException e){
                     continue;
                 }
-            }   
+            }   -
         
         return status;
     }
