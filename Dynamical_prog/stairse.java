@@ -54,14 +54,18 @@ public class stairse {
 
     public int uniquePaths(int m, int n) {
         int[][] mas = new int[m][n];
-
+        
         for(int i = 0; i < m; i++){
 
             for(int j = 0; j < n; j++){
                 
+                mas[j][i] = 0;
+
             }
 
         }
+
+        
 
         return mas[m - 1][n - 1];
     }
