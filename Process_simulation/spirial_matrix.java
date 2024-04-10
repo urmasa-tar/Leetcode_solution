@@ -22,22 +22,39 @@ class spirial_matrix{
 
             switch (struct){
                     case ('r'):
+                        if(){
 
-
-
+                        }else{
+                            struct = 'd';
+                            in_row += 1;
+                        }
                         break;
 
                     case ('d'):
+                        if(){
 
-
-
+                        }else {
+                            struct = 'l';
+                            in_row += 1;
+                        }
                         break;
 
                     case ('l'):
+                        if(){
 
+                        }else {
+                            struct = 'u';
+                            in_row += 1;
+                        }
                         break;
 
                     case ('u'):
+                        if () {
+
+                        }
+                        
+                        struct = 'r';
+                        in_row += 1;
 
                         break;
 

@@ -68,8 +68,7 @@ public class product {
                 } catch (ArithmeticException e){
                     continue;
                 }
-            }   -
-        
+            }
         return status;
     }
 
