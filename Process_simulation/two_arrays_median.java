@@ -20,9 +20,11 @@ public class two_arrays_median {
             if((i >= n) && ( j >= m)){
                 break;
             }else if(i >= n){
-
+                arr[i + j] = nums2[j];
+                j += 1;
             }else if(j >= m){
-
+                arr[i + j] = nums1[i];
+                i += 1;
             }else{
                 if(nums1[i] > nums2[j]){
                     arr[i + j] = nums2[j];
@@ -34,6 +36,11 @@ public class two_arrays_median {
             }
         }
 
+        if((n + m) % 2 == 0){
+            res = (double) (arr[(n + m) / 2] + arr[(n + m) / 2 + 1]) / 2;
+        }else{
+            res = (double) arr[(n + m) / 2 + 1];
+        }
         return res;
 
     }
