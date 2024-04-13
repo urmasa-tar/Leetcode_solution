@@ -9,11 +9,12 @@ public class product {
 
 
 
-        System.out.println( isMonotonic());
+        // System.out.println( isMonotonic());
 
         in.close();
     }
 
+    /*
     public static int arraySign(int[] nums) {
 
         int nm = 0;
@@ -55,7 +56,8 @@ public class product {
         return true;
     }
 
-    public static  boolean isMonotonic(int[] nums) {
+    /*
+    public static  boolean isMonotonic() {
         boolean status = true;
         
         // Module in java
@@ -71,5 +73,6 @@ public class product {
             }
         return status;
     }
+     */
 
 }

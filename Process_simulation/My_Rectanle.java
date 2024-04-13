@@ -17,9 +17,13 @@ public class My_Rectanle {
 
             for(int i = 0; i < n; i++){
                 for(int j = 0; j < m; j++){
-                    
+
+                    stat_arr[i][j] = 0;
+
                 }
             }
+
+
 
         }
 
@@ -28,7 +32,15 @@ public class My_Rectanle {
         return res;
     }
 
-    public byte[][] status_in_row(char[][] input_mat, byte[][] stat){
+    public byte[][] status_in_row(char[][] input_mat, byte[][] stat, int st_row, int st_col){
+        byte[][] stat_cop = Arrays.copyOf(stat, stat.length);
+
+
+
+        return stat_cop;
+    }
+
+    public byte[][] status_in_column(char[][] input_mat, byte[][] stat){
         byte[][] stat_cop = Arrays.copyOf(stat, stat.length);
 
         return stat_cop;
