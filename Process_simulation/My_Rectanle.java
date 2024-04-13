@@ -35,13 +35,27 @@ public class My_Rectanle {
     public byte[][] status_in_row(char[][] input_mat, byte[][] stat, int st_row, int st_col){
         byte[][] stat_cop = Arrays.copyOf(stat, stat.length);
 
+        for(int i = st_col + 1; i < input_mat[0].length; i++){
 
+            if(st_row == 0){
+
+            }else{
+                if(){
+
+                }else{
+
+                }
+            }
+
+        }
 
         return stat_cop;
     }
 
-    public byte[][] status_in_column(char[][] input_mat, byte[][] stat){
+    public byte[][] status_in_column(char[][] input_mat, byte[][] stat, int st_row, int st_col){
         byte[][] stat_cop = Arrays.copyOf(stat, stat.length);
+
+
 
         return stat_cop;
     }
