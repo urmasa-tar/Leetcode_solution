@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Graph_package")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d242902193f380dead7e416de7cffcd83cc4beff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5aac721f7326ca0dfca292dca36e7791441e998b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Graph_package")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Graph_package")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
