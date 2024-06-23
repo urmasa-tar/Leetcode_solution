@@ -49,5 +49,57 @@ namespace Graph_package
 
             return status;
         }
+
+        public bool CanVisitAllRooms(IList<IList<int>> rooms)
+        {
+            bool res = false;
+            bool[] ArrOfStatus = new bool[rooms.Count];
+            for (int i = 0; i < rooms.Count; i++) { ArrOfStatus[i] = false; }
+            ArrOfStatus[0] = true;
+            ArrOfStatus = BFSfromNode(rooms, ArrOfStatus, 0);
+
+
+
+            return res;
+        }
+
+        private bool[] BFSfromNode(IList<IList<int>> rooms, bool[] currentStatus, int node)
+        {
+            bool[] res = currentStatus;
+
+            for(int i = 0; i < rooms[node].Count; i++)
+            {
+                if (res[rooms[node][i]])
+                {
+                    continue;
+                }
+                else
+                {
+                    res[rooms[node][i]] = true;
+                    res = BFSfromNode(rooms, res, node);
+                }
+            }
+
+            return res;
+        }
+
+        private bool checkForStat(bool[] stat)
+        {
+            bool res = true;
+            for(int i = 0; i < stat.Length; i++)
+            {
+                if (stat[i])
+                {
+                    continue;
+                }
+                else
+                {
+                    res = false;
+                    break;
+                }
+            }
+            return res;
+        }
+
     }
 }
