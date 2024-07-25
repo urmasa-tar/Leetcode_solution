@@ -11,3 +11,11 @@
     <li><code>javac name.java </code></li>
     <li><code>java name.class</code></li>
 </ul>
+
+<h3>Моделирование</h3>
+
+<h3>Сортировка и поиск</h3>
+
+<h3>Динамическое программирование</h3>
+
+<h3>Графы</h3>
