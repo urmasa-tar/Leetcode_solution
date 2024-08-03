@@ -46,7 +46,10 @@ namespace Graph_package
         public int DifBetwenStr(string str1, string str2)
         {
             int res = -1;
+            if(str1.Length == str2.Length)
+            {
 
+            }
             return res;
         }
     }
