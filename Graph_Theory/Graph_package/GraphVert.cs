@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,15 +53,12 @@ namespace Graph_package
 
         public bool CanVisitAllRooms(IList<IList<int>> rooms)
         {
-            bool res = false;
             bool[] ArrOfStatus = new bool[rooms.Count];
             for (int i = 0; i < rooms.Count; i++) { ArrOfStatus[i] = false; }
             ArrOfStatus[0] = true;
             ArrOfStatus = BFSfromNode(rooms, ArrOfStatus, 0);
 
-
-
-            return res;
+            return checkForStat(ArrOfStatus);
         }
 
         private bool[] BFSfromNode(IList<IList<int>> rooms, bool[] currentStatus, int node)
@@ -101,5 +99,27 @@ namespace Graph_package
             return res;
         }
 
+        public int[] ShortestAlternatingPaths(int n, int[][] redEdges, int[][] blueEdges)
+        {
+            int[] mas = new int[n];
+
+            return mas;
+        }
+
+        private int BFS_check(int crntNode, int srchNode, int[][] vrtEdge)
+        {
+            int ans = -1;
+            
+            for(int node = 0;  node < vrtEdge[crntNode].Length; node++)
+            {
+                if (vrtEdge[crntNode][node] == srchNode) { ans = 1; }
+                else
+                {
+
+                }
+            }
+
+            return ans;
+        }
     }
 }
