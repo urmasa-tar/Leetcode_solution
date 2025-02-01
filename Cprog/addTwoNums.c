@@ -55,3 +55,27 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
     return lstNums;
 }
 */
+
+// Основная функция
+int main() {
+    struct ListNode* head = NULL;
+
+    // Добавление элементов в список
+    appendNode(&head, 1);
+    appendNode(&head, 2);
+    appendNode(&head, 3);
+
+    // Отображение списка
+    printList(head);
+
+    // Освобождение памяти
+    struct ListNode* current = head;
+    struct ListNode* nextNode;
+    while (current != NULL) {
+        nextNode = current->next;
+        free(current);
+        current = nextNode;
+    }
+
+    return 0;
+}
