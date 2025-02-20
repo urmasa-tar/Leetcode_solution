@@ -33,8 +33,8 @@ def main():
 
     test1_data = [0,1,0,2,1,0,1,3,2,1,2,1]
 
-    test1 = Solution.trap(test1_data)
-    print(test1)
+    res = Solution.trap(test1_data)
+    print(res)
 
 if __name__ == "main":
     main()

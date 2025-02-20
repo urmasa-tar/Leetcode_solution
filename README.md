@@ -19,3 +19,13 @@
 <h3>Динамическое программирование</h3>
 
 <h3>Графы</h3>
+
+<h4>Materials by tasks</h4>
+
+<ul>
+    <li><p>DFS for abc swap</p><code>https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/solutions/6440413/beats-100-algorithm-depth-first-search-dfs-for-k-th-happy-string-explaination-with-video</code></li>
+    <li><code></code></li>
+    <li><code></code></li>
+    <li><code></code></li>
+    <li><code></code></li>
+</ul>
