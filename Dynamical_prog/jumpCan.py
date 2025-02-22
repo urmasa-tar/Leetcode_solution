@@ -22,8 +22,13 @@ class Solution:
             if(ind == len(nums) - 1):
                 res = ind
                 break
-            if((nums[ind] > 0) and (nums[ind] + ind > res)):
-                res = ind
+            elif(nums[ind] > 0):
+                if((res != -1) and (nums[ind] + ind > res + nums[res])):
+                    res = ind
+                elif(res == -1):
+                    res = ind
+            else:
+                continue
 
         return res
 
