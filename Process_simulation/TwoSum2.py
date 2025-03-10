@@ -14,12 +14,12 @@ class Solution:
                 res.append(i + 1)
                 res.append(j + 1)
                 break
-            elif(numbers[i] + numbers[j] > target):
-                i += 1
+            elif((numbers[i] + numbers[j]) > target):
+                j -= 1
                 if(i >= j):
                     break
             else:
-                j -= 1
+                i += 1
                 if(i >= j):
                     break
         return res
