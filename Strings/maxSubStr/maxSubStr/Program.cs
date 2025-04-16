@@ -26,7 +26,7 @@
     {
         String res = "";
 
-        for (int end_subStr = 1; end_subStr < sub.Length; end_subStr++)
+        for (int end_subStr = 1; end_subStr <= sub.Length; end_subStr++)
         {
             String str_to_Check = sub.Substring(0, end_subStr);
             if(check_is_Sub(bigger_str, str_to_Check) && check_is_Sub(sub,  str_to_Check))

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("maxSubStr")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db55ae1093565073753985c8b4e060d2db9e8764")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+429062987bef05c984e4226af1aad34c74d811a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("maxSubStr")]
 [assembly: System.Reflection.AssemblyTitleAttribute("maxSubStr")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
