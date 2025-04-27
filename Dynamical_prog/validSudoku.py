@@ -29,6 +29,8 @@ class ValidTester:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         res = False
         
+        res = self.rec_Cycle(0, 0, board)
+
         return res
     
     def rec_Cycle(self, st: int, col: int, board: List[List[str]]) -> bool:
