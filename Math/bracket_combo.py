@@ -12,12 +12,15 @@ class Solution:
 
         if(close < open):
             if(close < self.num):
-                res = self.__open_close_rec__(open, close + 1, cur_str.append(')'))
+                str_to_rec = cur_str + ')'
+                res = self.__open_close_rec__(open, close + 1, str_to_rec)
             if(open < self.num):
-                res += self.__open_close_rec__(open + 1, close, cur_str.append('('))
+                str_to_rec = cur_str + '('
+                res += self.__open_close_rec__(open + 1, close, str_to_rec)
         else:
             if(open < self.num):
-                res += self.__open_close_rec__(open + 1, close, cur_str.append('('))
+                str_to_rec = cur_str + '('
+                res += self.__open_close_rec__(open + 1, close, str_to_rec)
             else:
                 res.append(cur_str)
 
