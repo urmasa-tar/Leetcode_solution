@@ -16,7 +16,7 @@ class Program
         Console.WriteLine("Вид до сортировки:");
         print_Arr(check_save_Arr);
 
-        solution.to_sort_Array("Buble");
+        solution.to_sort_Array("Line_sort");
         check_save_Arr = solution.GetArrayCopy();
         Console.WriteLine("После сортировки:");
         print_Arr(check_save_Arr);

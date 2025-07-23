@@ -123,7 +123,7 @@
                 // for left part
                 int k = (a + b)/2;
                 int[] a_arr = recurent_Calc(a, k);
-                int[] b_arr = recurent_Calc(b, k);
+                int[] b_arr = recurent_Calc(k, b);
                 res = sort_arr_from_Two(a_arr, b_arr);
             }
             return res;
@@ -136,10 +136,10 @@
             int j = 0;
             while (true)
             {
-                if ((i == arr_1.Length) && (j == arr_2.Length))
+                if ((i >= arr_1.Length) && (j >= arr_2.Length))
                 {
                     break;
-                }else if (i == arr_1.Length)
+                }else if (i >= arr_1.Length)
                 {
                     res[i + j] = arr_2[j];
                     j++;
