@@ -13,6 +13,12 @@ class Program
 
         var solution = new SortLibleri.sortClass(arr);
         int[] check_save_Arr = solution.GetArrayCopy();
+        Console.WriteLine("Вид до сортировки:");
+        print_Arr(check_save_Arr);
+
+        solution.to_sort_Array("Buble");
+        check_save_Arr = solution.GetArrayCopy();
+        Console.WriteLine("После сортировки:");
         print_Arr(check_save_Arr);
     }
 

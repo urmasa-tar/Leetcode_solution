@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SortLibleri")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+220d864483aa8879bb2899448155ade886dd87b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15faa849a6de261973966ded8cdfe8114dfc2a08")]
 [assembly: System.Reflection.AssemblyProductAttribute("SortLibleri")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SortLibleri")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
