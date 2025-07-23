@@ -24,6 +24,19 @@
             
         }
 
+        public void input_new_Arr(int[] arr)
+        {
+            if(arr == null)
+            {
+                throw new ArgumentNullException(nameof(arr));
+            }
+            else
+            {
+                date = new int[arr.Length];
+                Array.Copy (arr, date, arr.Length);
+            }
+        }
+
         public int[] GetArrayCopy()
         {
             var copy = new int[date.Length];
@@ -45,6 +58,7 @@
                         break;
                     case 1:
                         // код для input_sort
+                        line_sort();
                         break;
                     case 2:
                         // код для calcs_sort
@@ -84,6 +98,72 @@
             return res;
         }
 
+        private bool line_sort()
+        {
+            bool res = true;
+            //Start_of_recurent calc 
+            try
+            {
+                date = recurent_Calc(0, date.Length);
+            }catch(Exception ex) { Console.WriteLine(ex.Message); res = false; }
+            return res;
+        }
+
+        private int[] recurent_Calc(int a, int b)
+        {
+
+            int[] res = new int[b - a + 1];
+
+            if (a == b)
+            {
+                res[0] = date[a];
+            }
+            else
+            {
+                // for left part
+                int k = (a + b)/2;
+                int[] a_arr = recurent_Calc(a, k);
+                int[] b_arr = recurent_Calc(b, k);
+                res = sort_arr_from_Two(a_arr, b_arr);
+            }
+            return res;
+        }
+        
+        private int[] sort_arr_from_Two(int[] arr_1, int[] arr_2)
+        {
+            int[] res = new int[arr_1.Length + arr_2.Length];
+            int i = 0;
+            int j = 0;
+            while (true)
+            {
+                if ((i == arr_1.Length) && (j == arr_2.Length))
+                {
+                    break;
+                }else if (i == arr_1.Length)
+                {
+                    res[i + j] = arr_2[j];
+                    j++;
+                }else if (j == arr_2.Length)
+                {
+                    res[i + j] = arr_1[i];
+                    i++;
+                }
+                else
+                {
+                    if (arr_1[i] < arr_2[j])
+                    {
+                        res[i + j] = arr_1[i];
+                        i++;
+                    }
+                    else
+                    {
+                        res[i + j] = arr_2[i];
+                        j++;
+                    }
+                }
+            }
+            return res;
+        }
         private void Swap<T>(ref T a, ref T b)
         {
             (a, b) = (b, a);
