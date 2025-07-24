@@ -9,7 +9,6 @@ namespace sort_tasks
 {
     public class Right_interval
     {
-        Right_interval() { }
         public int[] FindRightInterval(int[][] intervals)
         {
             int[] result = new int[intervals.Length];
@@ -23,7 +22,7 @@ namespace sort_tasks
             // sorted points
             point_in_arr = sort_points(point_in_arr, intervals);
 
-
+            Console.WriteLine(String.Join(",", point_in_arr));
             return result;
         }
 
@@ -36,11 +35,26 @@ namespace sort_tasks
                 {
                     if (intervals[result[j_ind]][0] > intervals[result[index]][0])
                     {
-                        
+                        SwapInts(ref result[j_ind], ref result[index]);
                     }
                 }
             }
             return result;
         }
+
+        private void SwapInts(ref int a, ref int b)
+        {
+            int temp = a;
+            a = b;
+            b = temp;
+        }
+
+        void SwapArrays(ref int[] arr1, ref int[] arr2)
+        {
+            int[] temp = arr1;
+            arr1 = arr2;
+            arr2 = temp;
+        }
+
     }
 }
