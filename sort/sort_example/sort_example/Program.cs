@@ -32,7 +32,7 @@ class Program
                 Console.Write(to_print[i] + " ");
                 if(i >=  to_print.Length - 1)
                 {
-                    Console.Write("/n");
+                    Console.Write("\n");
                 }
             }
         }

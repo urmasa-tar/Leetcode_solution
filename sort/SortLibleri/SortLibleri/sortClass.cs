@@ -104,7 +104,7 @@
             //Start_of_recurent calc 
             try
             {
-                date = recurent_Calc(0, date.Length);
+                date = recurent_Calc(0, date.Length - 1);
             }catch(Exception ex) { Console.WriteLine(ex.Message); res = false; }
             return res;
         }
@@ -123,12 +123,18 @@
                 // for left part
                 int k = (a + b)/2;
                 int[] a_arr = recurent_Calc(a, k);
-                int[] b_arr = recurent_Calc(k, b);
+                int[] b_arr = recurent_Calc(k + 1, b);
                 res = sort_arr_from_Two(a_arr, b_arr);
+            }
+
+            if ()
+            {
+
             }
             return res;
         }
-        
+
+        // Sort by parts, a and b is pointers in array
         private int[] sort_arr_from_Two(int[] arr_1, int[] arr_2)
         {
             int[] res = new int[arr_1.Length + arr_2.Length];
@@ -136,28 +142,28 @@
             int j = 0;
             while (true)
             {
-                if ((i >= arr_1.Length) && (j >= arr_2.Length))
+                if ((i >= arr_1.Length - 1) && (j >= arr_2.Length - 1))
                 {
                     break;
-                }else if (i >= arr_1.Length)
+                }else if (i >= arr_1.Length - 1)
                 {
                     res[i + j] = arr_2[j];
                     j++;
-                }else if (j == arr_2.Length)
+                }else if (j >= arr_2.Length - 1)
                 {
                     res[i + j] = arr_1[i];
                     i++;
                 }
                 else
                 {
-                    if (arr_1[i] < arr_2[j])
+                    if (arr_1[i] <= arr_2[j])
                     {
                         res[i + j] = arr_1[i];
                         i++;
                     }
                     else
                     {
-                        res[i + j] = arr_2[i];
+                        res[i + j] = arr_2[j];
                         j++;
                     }
                 }
