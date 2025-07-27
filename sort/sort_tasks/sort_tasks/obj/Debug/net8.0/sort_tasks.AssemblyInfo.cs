@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sort_tasks")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3c750f9a2a3d7c2ce687dbfe44824e5edce55a3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2eddfd8729ba7095c9ee936ccf027b703edc3894")]
 [assembly: System.Reflection.AssemblyProductAttribute("sort_tasks")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sort_tasks")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

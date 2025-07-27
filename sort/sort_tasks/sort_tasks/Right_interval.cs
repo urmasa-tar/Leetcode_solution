@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace sort_tasks
 {
     public class Right_interval
-    {
+    { 
         public int[] FindRightInterval(int[][] intervals)
         {
             int[] result = new int[intervals.Length];
