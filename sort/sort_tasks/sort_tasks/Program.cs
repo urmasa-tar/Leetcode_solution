@@ -4,6 +4,13 @@
     {
         public static void Main(string[] args)
         {
+
+            russian_interval russian_Interval = new russian_interval();
+            int[][] pairs_hw = new int[][] { [5, 4], [6, 4], [6, 7], [2, 3] };
+            int res = russian_Interval.MaxEnvelopes(pairs_hw);
+            Console.WriteLine(res);
+            // [[1, 1],[1, 1],[1, 1]]
+            /*
             Right_interval class_for_calc = new Right_interval();
             int[] array_input = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
@@ -19,14 +26,14 @@
                 {
                     Console.WriteLine(String.Join(",", pair_inp[i]));
                 }
-                */
+                /
             }
             else
             {
                 Console.WriteLine("Uncorrect input, please repeat");
             }
 
-
+            */
         }
 
         public static int[][] to_pairs(int[] arr)

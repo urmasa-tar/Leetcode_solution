@@ -27,7 +27,7 @@ namespace sort_tasks
         public int CompareTo(WidthH other)
         {
             int hightComprasion = Wight.CompareTo(other.Wight);
-            if (hightComprasion == 0) { hightComprasion = Hight.CompareTo(other.Hight-); }
+            if (hightComprasion == 0) { hightComprasion = Hight.CompareTo(other.Hight); }
             return hightComprasion;
         }
     }
@@ -37,10 +37,29 @@ namespace sort_tasks
         public int MaxEnvelopes(int[][] envelopes)
         {
             int res = 0;
-
+            if (envelopes.Length > 0) { res = 1; }
             HightW[] arr_h_w = new HightW[envelopes.Length];
+            WidthH[] arr_w_h = new WidthH[envelopes.Length];
+            for(int i = 0; i < envelopes.Length; i++)
+            {
+                int w = envelopes[i][0];
+                int h = envelopes[i][1];
 
+                arr_w_h[i].Wight = w;
+                arr_h_w[i].Hight = h;
+                arr_w_h[i].Hight = h;
+                arr_h_w[i].Wight = w;
+            }
+            Array.Sort(arr_w_h);
+            Array.Reverse(arr_w_h);
 
+            for(int i = 1; i < arr_w_h.Length; i++)
+            {
+                if (arr_w_h[i].Hight < arr_w_h[i - 1].Hight)
+                {
+                    res += 1;
+                }
+            }
             return res;
         }
     }
