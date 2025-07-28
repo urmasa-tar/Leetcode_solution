@@ -4,13 +4,18 @@
     {
         public static void Main(string[] args)
         {
-
+            int[][] matrix_k = new int[][] { [1, 5, 9], [10, 11, 13], [12, 13, 15] };
+            int k = 8;
+            k_elem_inarrays k_Elem_ = new k_elem_inarrays();
+            Console.WriteLine(k_Elem_.KthSmallest(matrix_k, k));
+            /* 1)
             russian_interval russian_Interval = new russian_interval();
             int[][] pairs_hw = new int[][] { [5, 4], [6, 4], [6, 7], [2, 3] };
             int res = russian_Interval.MaxEnvelopes(pairs_hw);
             Console.WriteLine(res);
+            */
             // [[1, 1],[1, 1],[1, 1]]
-            /*
+            /* 2) 
             Right_interval class_for_calc = new Right_interval();
             int[] array_input = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
