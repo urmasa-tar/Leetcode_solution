@@ -21,7 +21,11 @@ namespace sort_tasks
         public int EraseOverlapIntervals(int[][] intervals)
         {
             int res = -1;
-
+            Interval[] st_Len = new Interval[intervals.Length];
+            for(int i = 0; i < intervals.Length; i++)
+            {
+                st_Len[i];
+            }
             return res;
         }
     }
