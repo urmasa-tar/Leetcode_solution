@@ -30,6 +30,15 @@ namespace string_tasks
 
             }else if ((s.Length - 1 > s_point) && (p.Length - 1 == p_point))
             {
+                // check for * - only way
+
+            }
+            else if((s.Length - 1 > s_point) && (p.Length - 1 > p_point))
+            {
+                // 1) p[i] is . --> . = s[j]
+                // 2) p[i] is * --> 2.1) skip s[j]
+                //                  2.2) skip p[i]
+                // 3) p[i] is a/b/c/d ... --> calc difference
 
             }
 
