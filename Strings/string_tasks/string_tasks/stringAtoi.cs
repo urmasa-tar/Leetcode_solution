@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -51,12 +52,14 @@ namespace string_tasks
                     }else if (local_digit == 0)
                     {
                         fl_to_m = false;
+                        // check
                         if (res > 0) { res = res * 10; }
                         else { continue; }
                     }
                     else if (local_digit != -1)
                     {
                         fl_to_m = false;
+                        // check
                         res = res * 10 + local_digit;
                     }
                     else
@@ -77,7 +80,57 @@ namespace string_tasks
             return num * res;
         }
 
-        
+        // if our res is bigger than 
+        private bool check_board(ref int current, int num, int to_add)
+        {
+            bool res = false;
+            int mx_var = int.MinValue;
+            int min_var = int.MinValue;
 
+            if(to_add == 0)
+            {
+                // Calc with max
+                if(num == 1)
+                {
+                    if(mx_var / 10 <= current)
+                    {
+                        current = int.MaxValue;
+                        res = true;
+                    }
+                    else{ current = current * 10; }
+                }else if(num == -1) // calc with min
+                {
+                    if ((min_var / 10) >= (current * -1))
+                    {
+                        current = int.MinValue;
+                        res = true;
+                    }
+                    else{ current = current * 10; }
+                }
+            }
+            else
+            {
+                // Calc with max
+                if (num == 1)
+                {
+                    if (mx_var / 10 <= current)
+                    {
+                        current = int.MaxValue;
+                        res = true;
+                    }
+                    else { current = current * 10; }
+                }
+                else if (num == -1) // calc with min
+                {
+                    if ((min_var / 10) >= (current * -1))
+                    {
+                        current = int.MinValue;
+                        res = true;
+                    }
+                    else { current = current * 10; }
+                }
+            }
+            return res;
+        }
     }
 }
