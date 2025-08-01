@@ -21,7 +21,8 @@ namespace string_tasks
             { '8', 8 },
             { '9', 9 },
             { '0', 0 },
-            { '-', -1}
+            { '-', -1},
+            { '+', 2}
         };
         public int MyAtoi(string s)
         {
@@ -40,27 +41,29 @@ namespace string_tasks
             int num = 1; // for res >= 0 -> 1
                          // for res < 0 -> -1
             bool fl_to_m = true;
+            bool fl_to_stop = false;
             foreach (char c in s)
             {
                 if (charCount.ContainsKey(c))
                 {
                     int local_digit = charCount[c];
-                    if ((local_digit == -1) && (fl_to_m))
+                    if (((local_digit == -1) && (fl_to_m)) || ((c == '+') && (fl_to_m)))
                     {
-                        num = -1;
+                        if (local_digit == -1) { num = -1; }
                         fl_to_m = false;
                     }else if (local_digit == 0)
                     {
                         fl_to_m = false;
                         // check
-                        if (res > 0) { res = res * 10; }
+                        // if (res > 0) { res = res * 10; }
+                        if (res > 0) { fl_to_stop = check_board(ref res, num, charCount[c]); }
                         else { continue; }
                     }
-                    else if (local_digit != -1)
+                    else if ((local_digit != -1) && (local_digit != 2))
                     {
                         fl_to_m = false;
                         // check
-                        res = res * 10 + local_digit;
+                        fl_to_stop = check_board(ref res, num, charCount[c]);
                     }
                     else
                     {
@@ -75,6 +78,7 @@ namespace string_tasks
                     }
                     break;
                 }
+                if (fl_to_stop) { break; } 
             }
 
             return num * res;
@@ -113,21 +117,21 @@ namespace string_tasks
                 // Calc with max
                 if (num == 1)
                 {
-                    if (mx_var / 10 <= current)
+                    if ((mx_var - to_add) / 10 <= current)
                     {
                         current = int.MaxValue;
                         res = true;
                     }
-                    else { current = current * 10; }
+                    else { current = current * 10 + to_add; }
                 }
                 else if (num == -1) // calc with min
                 {
-                    if ((min_var / 10) >= (current * -1))
+                    if (((min_var + to_add) / 10) >= (current * -1))
                     {
                         current = int.MinValue;
                         res = true;
                     }
-                    else { current = current * 10; }
+                    else { current = current * 10 + to_add; }
                 }
             }
             return res;
