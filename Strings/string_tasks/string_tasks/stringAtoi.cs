@@ -59,7 +59,7 @@ namespace string_tasks
                         if (res > 0) { fl_to_stop = check_board(ref res, num, charCount[c]); }
                         else { continue; }
                     }
-                    else if ((local_digit != -1) && (local_digit != 2))
+                    else if ((local_digit != -1) && (c != '+'))
                     {
                         fl_to_m = false;
                         // check
