@@ -11,9 +11,9 @@ namespace string_tasks
         char[] to_check = { '*', '.'};
         public bool IsMatch(string s, string p)
         {
-            bool res = false;
-            res = rec_from_pointers(s, p, 0, 0, false);
-            return false;
+            bool result = false;
+            result = rec_from_pointers(s, p, 0, 0, false);
+            return result;
         }
 
         private bool rec_from_pointers(string s, string p, int s_point, int p_point, bool out_s)
@@ -23,11 +23,20 @@ namespace string_tasks
             if((s.Length - 1 == s_point) && (p.Length - 1 == p_point))
             {
                 // check for same
-                if ((p[p_point] == s[s_point]) || (p[p_point] == '*') || (p[p_point] == '.'))
+                if (p[p_point] == s[s_point] && !out_s)
                 {
                     res = true;
                 }
-            }else if ((s.Length - 1 == s_point) && (p.Length - 1 > p_point))
+                if (p[p_point] == '.')
+                {
+                    res = true;
+                }
+                if (p[p_point] == '*')
+                {
+                    res = true;
+                }
+            }
+            else if ((s.Length - 1 == s_point) && (p.Length - 1 > p_point))
             {
                 // check for * or . + *
                 if ((p[p_point]) == '.' && (!out_s))
