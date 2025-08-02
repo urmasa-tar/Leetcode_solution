@@ -30,7 +30,7 @@ namespace string_tasks
             }else if ((s.Length - 1 == s_point) && (p.Length - 1 > p_point))
             {
                 // check for * or . + *
-                if (p[p_point] == '.')
+                if ((p[p_point]) == '.' && (!out_s))
                 {
                     res = rec_from_pointers(s, p, s_point, p_point + 1, true);
                 }
@@ -51,9 +51,9 @@ namespace string_tasks
                 // 3) p[i] is a/b/c/d ... --> calc difference
 
 
-                if (p[p_point] == '.') { } // 1)
-                else if (p[p_point] == '*') { } // 2)
-                else if (p[p_point] == s[s_point]) { } // 3)
+                if (p[p_point] == '.') { res = rec_from_pointers(s, p, s_point + 1, p_point + 1, false); } // 1)
+                else if (p[p_point] == '*') { res = (rec_from_pointers(s, p, s_point + 1, p_point + 1, false) || rec_from_pointers(s, p, s_point + 1, p_point, false));  } // 2)
+                else if (p[p_point] == s[s_point]) { res = rec_from_pointers(s, p, s_point + 1, p_point + 1, false); } // 3)
             }
 
             return res;
