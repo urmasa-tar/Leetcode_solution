@@ -26,7 +26,10 @@ namespace string_tasks
             while (num > 0)
             {
                 if(i >= ln_d) { break; }
+                if (RomtoInt[i].Value > )
+                {
 
+                }
             }
 
             return res;
