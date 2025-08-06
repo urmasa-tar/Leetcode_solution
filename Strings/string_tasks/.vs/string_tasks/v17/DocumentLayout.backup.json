@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\urmasa\\Documents\\selfDestruction\\classical_prog\\Leetcode_solution\\Strings\\string_tasks\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9BB6D3A3-3CEB-420B-9768-CF19BB764868}|string_tasks\\string_tasks.csproj|c:\\users\\urmasa\\documents\\selfdestruction\\classical_prog\\leetcode_solution\\strings\\string_tasks\\string_tasks\\inttoroman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BB6D3A3-3CEB-420B-9768-CF19BB764868}|string_tasks\\string_tasks.csproj|solutionrelative:string_tasks\\inttoroman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BB6D3A3-3CEB-420B-9768-CF19BB764868}|string_tasks\\string_tasks.csproj|c:\\users\\urmasa\\documents\\selfdestruction\\classical_prog\\leetcode_solution\\strings\\string_tasks\\string_tasks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BB6D3A3-3CEB-420B-9768-CF19BB764868}|string_tasks\\string_tasks.csproj|solutionrelative:string_tasks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "intToroman.cs",
+              "DocumentMoniker": "C:\\Users\\urmasa\\Documents\\selfDestruction\\classical_prog\\Leetcode_solution\\Strings\\string_tasks\\string_tasks\\intToroman.cs",
+              "RelativeDocumentMoniker": "string_tasks\\intToroman.cs",
+              "ToolTip": "C:\\Users\\urmasa\\Documents\\selfDestruction\\classical_prog\\Leetcode_solution\\Strings\\string_tasks\\string_tasks\\intToroman.cs",
+              "RelativeToolTip": "string_tasks\\intToroman.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-02T16:42:20.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\urmasa\\Documents\\selfDestruction\\classical_prog\\Leetcode_solution\\Strings\\string_tasks\\string_tasks\\Program.cs",
+              "RelativeDocumentMoniker": "string_tasks\\Program.cs",
+              "ToolTip": "C:\\Users\\urmasa\\Documents\\selfDestruction\\classical_prog\\Leetcode_solution\\Strings\\string_tasks\\string_tasks\\Program.cs",
+              "RelativeToolTip": "string_tasks\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T17:57:16.998Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

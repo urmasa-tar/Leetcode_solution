@@ -1,0 +1,15 @@
+C:\Users\urmasa\Documents\selfDestruction\classical_prog\Leetcode_solution\Strings\string_tasks\string_tasks\bin\Debug\net8.0\string_tasks.exe
+C:\Users\urmasa\Documents\selfDestruction\classical_prog\Leetcode_solution\Strings\string_tasks\string_tasks\bin\Debug\net8.0\string_tasks.deps.json
+C:\Users\urmasa\Documents\selfDestruction\classical_prog\Leetcode_solution\Strings\string_tasks\string_tasks\bin\Debug\net8.0\string_tasks.runtimeconfig.json
+C:\Users\urmasa\Documents\selfDestruction\classical_prog\Leetcode_solution\Strings\string_tasks\string_tasks\bin\Debug\net8.0\string_tasks.dll
+C:\Users\urmasa\Documents\selfDestruction\classical_prog\Leetcode_solution\Strings\string_tasks\string_tasks\bin\Debug\net8.0\string_tasks.pdb
+C:\Users\urmasa\Documents\selfDestruction\classical_prog\Leetcode_solution\Strings\string_tasks\string_tasks\obj\Debug\net8.0\string_tasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\urmasa\Documents\selfDestruction\classical_prog\Leetcode_solution\Strings\string_tasks\string_tasks\obj\Debug\net8.0\string_tasks.AssemblyInfoInputs.cache
+C:\Users\urmasa\Documents\selfDestruction\classical_prog\Leetcode_solution\Strings\string_tasks\string_tasks\obj\Debug\net8.0\string_tasks.AssemblyInfo.cs
+C:\Users\urmasa\Documents\selfDestruction\classical_prog\Leetcode_solution\Strings\string_tasks\string_tasks\obj\Debug\net8.0\string_tasks.csproj.CoreCompileInputs.cache
+C:\Users\urmasa\Documents\selfDestruction\classical_prog\Leetcode_solution\Strings\string_tasks\string_tasks\obj\Debug\net8.0\string_tasks.sourcelink.json
+C:\Users\urmasa\Documents\selfDestruction\classical_prog\Leetcode_solution\Strings\string_tasks\string_tasks\obj\Debug\net8.0\string_tasks.dll
+C:\Users\urmasa\Documents\selfDestruction\classical_prog\Leetcode_solution\Strings\string_tasks\string_tasks\obj\Debug\net8.0\refint\string_tasks.dll
+C:\Users\urmasa\Documents\selfDestruction\classical_prog\Leetcode_solution\Strings\string_tasks\string_tasks\obj\Debug\net8.0\string_tasks.pdb
+C:\Users\urmasa\Documents\selfDestruction\classical_prog\Leetcode_solution\Strings\string_tasks\string_tasks\obj\Debug\net8.0\string_tasks.genruntimeconfig.cache
+C:\Users\urmasa\Documents\selfDestruction\classical_prog\Leetcode_solution\Strings\string_tasks\string_tasks\obj\Debug\net8.0\ref\string_tasks.dll
