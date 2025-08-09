@@ -42,7 +42,7 @@ namespace hashTask
 
             for(int num_s = 0; num_s < words.Length; num_s++)
             {
-                string str_w = s.Substring(num_s * word_ln, (num_s * word_ln + word_ln - 1));
+                string str_w = s.Substring(num_s * word_ln, (num_s * word_ln + word_ln));
                 if(Array.IndexOf(words, str_w) != -1)
                 {
                     if (have_been.Contains(str_w))
