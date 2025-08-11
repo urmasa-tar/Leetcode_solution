@@ -30,8 +30,21 @@ namespace hashTask
                 for(int col = 0; col < 9; col++)
                 {
                     char cell = board[row][col];
-
                     int box_ind = calc_boxInd(row, col);
+
+                    if (cell == '.') { continue; }
+                    else if (haskArrRow[row].Contains(cell) || haskArrCol[col].Contains(cell) || haskArrBox[box_ind].Contains(cell))
+                    {
+                        flah_exit = true;
+                        res = false;
+                        break;
+                    }
+                    else
+                    {
+                        haskArrBox[box_ind].Add(cell);
+                        haskArrRow[row].Add(cell);
+                        haskArrCol[col].Add(cell);
+                    }
 
                 }
                 if (flah_exit) { break; }
@@ -40,11 +53,11 @@ namespace hashTask
             return res;
         }
 
-        int calc_boxInd(int row, int col)
+        public int calc_boxInd(int row, int col)
         {
             int res = 0;
 
-            
+            res = ((int)(row / 3) * 3) + (col / 3);
 
             return res;
         }
