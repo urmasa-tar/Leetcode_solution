@@ -17,6 +17,7 @@
             validSudoku isVal = new validSudoku();
 
             // check box fub=nction test
+            /*
             Console.WriteLine($"Ожидаемый сектор 1 для строки 1 и колонки 4 . Результата: {isVal.calc_boxInd(1, 4)}");
             Console.WriteLine($"Ожидаемый сектор 2 для строки 2 и колонки 8 . Результата: {isVal.calc_boxInd(2, 8)}");
             Console.WriteLine($"Ожидаемый сектор 0 для строки 0 и колонки 0 . Результата: {isVal.calc_boxInd(0, 0)}");
@@ -36,6 +37,9 @@
             };
 
             Console.WriteLine(isVal.IsValidSudoku(board));
+            */
+
+
         }
     }
 }
