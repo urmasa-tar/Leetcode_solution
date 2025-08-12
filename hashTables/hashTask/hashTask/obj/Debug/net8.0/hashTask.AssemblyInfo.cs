@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("hashTask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3094d882bb000d716f8c7c798d021f461fc07eaa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68e27605e3cbe67f2570424a330727bd128dbb97")]
 [assembly: System.Reflection.AssemblyProductAttribute("hashTask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("hashTask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
