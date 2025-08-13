@@ -16,7 +16,7 @@ namespace binSearch
         public bool SearchMatrix(int[][] matrix, int target)
         {
             bool result = false;
-            pairIndElem[] elemWithindex = new pairIndElem[matrix.Length * matrix.Length];
+            pairIndElem[] elemWithindex = new pairIndElem[matrix.Length * matrix[0].Length];
             int pointer_k = 0;
             for(int i = 0; i < matrix.Length; i++)
             {
