@@ -10,29 +10,23 @@ namespace binSearch
     {
         public int MySqrt(int x)
         {
-            int res = -1;
-            int[] serch_arr = new int[int.MaxValue / 2 + 1];
-            for(int i = 0; i < int.MaxValue / 2 + 1; i++) { serch_arr[i] = i; }
+            if (x < 0) throw new ArgumentException("x must be non-negative");
+            if (x < 2) return x; // √0=0, √1=1
 
-            int a = 0;
-            int b = int.MaxValue / 2 + 1;
-            int k = (a + b) / 2;
-            // double sqr_x = Math.Sqrt(x);
-            while (a <= b)
+            int left = 1;
+            int right = Math.Min(x, 46_340); // Максимально возможный корень для int
+
+            while (left <= right)
             {
-                k = (a + b) / 2;
-                if ((serch_arr[k] * serch_arr[k] <= x) && (serch_arr[k + 1] * serch_arr[k + 1] > x))
-                {
-                    res = serch_arr[k];
-                    break;
-                }
-                else
-                {
-                    if (serch_arr[k] * serch_arr[k] < x) { a = k + 1; }
-                    else { b = k - 1; }
-                }
+                int mid = left + (right - left) / 2;
+                long square = (long)mid * mid;
+
+                if (square == x) return mid;
+                if (square < x) left = mid + 1;
+                else right = mid - 1;
             }
-            return res;
+
+            return right; // Возвращаем округлённый вниз корень
         }
     }
 }

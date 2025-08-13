@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("binSearch")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b44db99c10fc0547107a0858745d9d252c3b5c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59f4d7b24f4ca68651c9e1c6801acbc294b7328f")]
 [assembly: System.Reflection.AssemblyProductAttribute("binSearch")]
 [assembly: System.Reflection.AssemblyTitleAttribute("binSearch")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

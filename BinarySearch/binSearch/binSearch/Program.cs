@@ -6,7 +6,7 @@
         {
             powForLong powForLong = new powForLong();
 
-            Console.WriteLine($"For 178 nearest int for sqrt is {powForLong.MySqrt(178)}");
+            // Console.WriteLine($"For 178 nearest int for sqrt is {powForLong.MySqrt(178)}");
         }
     }
 }
