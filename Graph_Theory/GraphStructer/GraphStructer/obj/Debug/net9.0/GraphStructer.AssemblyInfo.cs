@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GraphStructer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+185da9d9ce10a3c7341e6e32ee2e64cd182f09c7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50ef45725e416428e9ac228754adfcf3768485d5")]
 [assembly: System.Reflection.AssemblyProductAttribute("GraphStructer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GraphStructer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
