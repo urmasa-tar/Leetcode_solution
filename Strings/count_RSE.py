@@ -7,14 +7,25 @@ class Solution:
         res = ""
         arr = []
         
-
+        arr = self.int_to_arr(n)
+        
+        if(len(arr) % 2 == 0):
+            for i in range(0, len(arr), 2):
+                res += arr[i]
+        else:
+            res = "Error"
 
         return res
     
     def int_to_arr(self, num: int) -> List[int]:
+
         res_arr = []
 
-        return res_arr
+        while(num > 0):
+            res_arr.append(num % 10)
+            num = num / 10
+        
+        return res_arr.reverse()
 
     def pair_to_str(self) -> str:
         res = ""
