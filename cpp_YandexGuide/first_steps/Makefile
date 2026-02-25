@@ -25,3 +25,6 @@ year_check: vsc_year.cpp
 
 day_in_month_check: day_in_month.cpp
 	g++ day_in_month.cpp -o day_in_month.o
+
+calendar: calndar.cpp
+	g++ calndar.cpp -o prnt_cal.o
