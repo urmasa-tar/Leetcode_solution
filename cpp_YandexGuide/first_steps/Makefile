@@ -19,3 +19,9 @@ quen_step: quen_step.cpp
 
 check_trn: st_triangle.cpp
 	g++ st_triangle.cpp -o trn.o
+
+year_check: vsc_year.cpp
+	g++ vsc_year.cpp -o check_year.o
+
+day_in_month_check: day_in_month.cpp
+	g++ day_in_month.cpp -o day_in_month.o
