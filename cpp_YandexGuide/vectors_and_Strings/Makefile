@@ -9,3 +9,12 @@ clean :
 
 run : mainRun
 	./mainRun
+
+is_valid: valid_pass.cpp
+	g++ -c valid_pass.cpp -o valid.o
+
+validRun : valid.o
+	g++ valid.o -o validRun
+
+run_valid: validRun
+	./validRun
