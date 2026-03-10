@@ -18,3 +18,9 @@ validRun : valid.o
 
 run_valid: validRun
 	./validRun
+
+str_sort.o : str_sort.cpp
+	g++ -c str_sort.cpp -o str_sort.o
+
+strSortRun : str_sort.o
+	g++ str_sort.o -o strSortRun
